@@ -1,6 +1,4 @@
-# Vercel React Best Practices — Hiểu từ Gốc đến Ngọn
-
-> **Dành cho PM / người cần nắm skill này mà không cần mô tả đúng "từ khóa"**
+# Vercel React Best Practices 
 
 ---
 
@@ -8,7 +6,7 @@
 
 ### 1.1 Project React/Next.js thường gặp gì?
 
-Bạn có một web React hoặc Next.js (vd **panoee-studio-public** — xem tour 360). Theo thời gian có thể xảy ra:
+Bạn có một web React hoặc Next.js. Theo thời gian có thể xảy ra:
 
 ```
 • Trang lần đầu mở rất chậm, màn trắng lâu
@@ -354,7 +352,7 @@ export async function deleteComment(id) {
 
 ---
 
-## Phần 5: Trong Project Hiện Tại (panoee) — Nhận Lại Gì, Thấy Gì, Kiểm Tra Sao?
+## Phần 5: Trong Project 
 
 ### 5.1 Bạn sẽ nhận lại được gì
 
@@ -396,20 +394,20 @@ export async function deleteComment(id) {
 
 Case 4 (Waterfalls — `_app`, getServerSideProps) và Case 5 (conditional render) cũng có trong file step-by-step với bảng từng bước và đoạn code mẫu.
 
-### 5.5 Scenario: Một ngày làm việc với skill (minh họa)
+### 5.5  (minh họa)
 
-**Buổi sáng — Bạn không nói đúng từ khóa:**
+**Bạn không nói đúng từ khóa:**
 
 - Bạn: "Trang tour lần đầu mở chậm quá."
 - Bạn thêm: "Kiểm tra theo Vercel React best practices giúp tôi."
 - Agent: Load skill → map "chậm" → Waterfalls + Bundle → đọc rule → tìm `_app.tsx`, `next.config.js`, getServerSideProps → đề xuất: Promise.all / start sớm cho request, thêm optimizePackageImports.
 
-**Buổi chiều — Làm theo checklist:**
+**Làm theo checklist:**
 
 - Bạn: "Làm case 1 và 2 trong doc step-by-step."
 - Agent: Mở step-by-step-examples → Case 1 (next.config), Case 2 (utils.ts, useCommentScene) → thực hiện từng bước, báo đã sửa và gợi ý kiểm tra (build, search `.sort(`).
 
-**Cuối ngày — Kiểm tra:**
+**Kiểm tra:**
 
 - Build trước/sau → so sánh First Load JS.
 - Mở trang ẩn danh (Safari/Chrome) → không crash.
@@ -475,8 +473,7 @@ Task / triệu chứng
 
 ---
 
-## Phần 8: Quick Wins vs Top Fixes — Giải Thích Dài Hơn
-
+## Phần 8: Quick Wins vs Top Fixes
 ### 8.1 Quick wins (làm nhanh, ít thay đổi)
 
 | Mục | Giải thích ngắn | Trong panoee |
